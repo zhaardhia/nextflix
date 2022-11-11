@@ -5,17 +5,11 @@
   height: auto;
   border-radius: 10px;
   text-decoration: none;
-  box-shadow: 2px 1px 3px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 3px 2px 4px 2px rgba(0, 0, 0, 0.3);
   
   
   margin: 1rem;
   cursor: pointer;
-  /* &:hover {
-    .film-name-card{
-      display: block;
-    }
-    @include hoverCard()
-  } */
   transition: all 0.2s linear;
   cursor: pointer;
 }
@@ -29,9 +23,7 @@
 }
 
 .foto{
-  /* width: auto; */
   border-radius: 10px;
-  /* height: auto */
 }
 .foto:hover {
   filter: brightness(50%);

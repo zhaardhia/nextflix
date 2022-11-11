@@ -1,10 +1,9 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import Link from 'next/link'
 import { useMovie } from '../contexts/ApiContext'
-import CardFilm from '../components/CardFilm'
 import FilmSection from '../components/FilmSection'
+import Banner from '../components/Banner'
 
 export default function Home() {
   const { state } = useMovie()
@@ -18,6 +17,7 @@ export default function Home() {
         <meta name="keywords" content="ninjas"/>
       </Head>
       <main>
+        <Banner films={movie}/>
         <FilmSection films={movie}/>
       </main>
     </div>

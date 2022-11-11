@@ -1,0 +1,97 @@
+.banner{
+  width: 55rem;
+  height: auto;
+  background-image: linear-gradient(75deg,#90b9ec, #bdd5f4);
+  border-radius: 10px;
+  margin: 0 auto;
+  box-shadow: 2px 2px 6px 0 rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+}
+@media screen and (max-width: 900px) {
+  .banner {
+    width: 35rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .banner {
+    width: 85%;
+  }
+}
+
+.bannerInfo{
+  width: 20rem;
+}
+
+.bannerTitle{
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 1rem;
+}
+.bannerDivImage{
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  transform-origin: bottom;
+}
+.bounce1 {
+  animation-name: bounce-1;
+  animation-timing-function: linear;
+}
+
+@keyframes bounce-1 {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+
+.bannerImage{
+  border-radius: 10px;
+  width: 14rem;
+  box-shadow: 2px 2px 6px 3px rgba(0, 0, 0, 0.3);
+}
+
+.bannerGenre{
+  display: flex;
+  justify-content: center;
+}
+.genreInfo{
+  background-color: #8395b1;
+  margin: 0 10px;
+  padding: 3px;
+  color: rgb(232, 232, 232);
+  border-radius: 2px;
+  font-weight: 100;
+}
+.genreTitleInfo {
+  font-weight: 100;
+  font-size: 1rem;
+}
+.buttonBanner{
+  display: flex;
+  justify-content: space-evenly;
+  margin: 1rem 0;
+  
+}
+.buttonBanner > a{
+  padding: 0.3rem 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+  color: black;
+  box-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
+  transition: all 0.2s linear;
+} 
+.bannerTodetail{
+  border: 1px solid #66b3ee;
+}
+.bannerTodetail:hover {
+  background-color: #67a1f1;
+}
+.bannerToofficial{
+  border: 1px solid #31a0c8;
+}
+.bannerToofficial:hover{
+  background-color: #67a1f1;
+}

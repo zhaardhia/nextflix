@@ -6,7 +6,7 @@ const FilmSection = ({ films }) => {
   return (
     <div className={styles.mainSection}>
       <div className={styles.mainSectionHeader}>
-        <h4>All Movies</h4>
+        <h4>Movies</h4>
       </div>
       <hr />
       <div className={styles.App}>
