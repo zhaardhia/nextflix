@@ -1,4 +1,4 @@
-import { API_URL, API_URL_SEARCH, API_URL_SHOWS } from "./api"
+import { API_URL, API_URL_SEARCH, API_URL_SHOWS, API_URL_SHOWS_STANDARD } from "./api"
 
 export const tvMazeGirls = async (movie = 'girls') => {
   try {
@@ -19,7 +19,7 @@ export const tvMazeSearch = async (movie = '') => {
 
 export const tvMazeShowsDetail = async (id) => {
   try {
-    const res = await fetch(`${API_URL_SHOWS}/${id}`)
+    const res = await fetch(`${API_URL_SHOWS_STANDARD}/${id}`)
     const data = await res.json();
     return data;
   } catch (error) {
