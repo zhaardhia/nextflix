@@ -1,11 +1,12 @@
 import React from 'react'
 import styles from '../styles/Navbar.module.css'
 import { DebounceInput } from 'react-debounce-input'
+import Link from 'next/link'
 
 const Navbar = () => {
   return (
     <nav className={styles.navbar}>
-      <p className={styles.linkHome}>Campflix</p>
+      <Link href="/" className={styles.linkHome}>Campflix</Link>
       <div className={styles.listNav}>
         <DebounceInput 
           // onChange={handleInput}
