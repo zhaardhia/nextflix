@@ -59,7 +59,7 @@
 }
 .genreInfo{
   background-color: #8395b1;
-  margin: 0 10px;
+  margin: 0 7px;
   padding: 3px;
   color: rgb(232, 232, 232);
   border-radius: 2px;
@@ -67,7 +67,7 @@
 }
 .genreTitleInfo {
   font-weight: 100;
-  font-size: 1rem;
+  font-size: 0.9rem;
 }
 .buttonBanner{
   display: flex;

@@ -1,8 +1,10 @@
 import Image from "next/image"
 import styles from "../styles/Banner.module.css"
+import { useMovie } from "../contexts/ApiContext"
 const Banner = ({ films }) => {
+  const { state } = useMovie();
 
-  const banner = films[0]
+  const banner = Object.keys(state?.banner).length === 0 ? state?.movie[0] : state?.banner
 
   return (
     <div className={styles.banner}>

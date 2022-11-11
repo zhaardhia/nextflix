@@ -17,11 +17,17 @@ function movieReducer(state, action) {
         loading: action.payload
       }
     }
+    case "setBanner": {
+      return {
+        ...state,
+        banner: action.payload
+      }
+    }
   }
 }
 
 export function MovieProvider({children}) {
-  const [state, dispatch] = useReducer(movieReducer, { movie: [], loading: false })
+  const [state, dispatch] = useReducer(movieReducer, { movie: [], loading: false, banner: {} })
 
   async function fetchMovie(param) {
     try {
