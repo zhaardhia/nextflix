@@ -1,0 +1,161 @@
+.detail-page{
+  display: flex;
+  justify-content: space-evenly;
+  margin: 3rem auto;
+  width: 50rem;
+  font-size: 1.2rem;
+}
+
+@media screen and (max-width: 900px) {
+  .detail-page {
+    flex-direction: column;
+  }
+  .detail-one {
+    width: 35rem;
+    margin: 0 auto;
+  }
+  .detail-one > img {
+    margin: 0 auto;
+  }
+  .detail-film-name {
+    text-align: center;
+  }
+  .detail-film-genre {
+    width: 18rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .detail-two {
+    width: 35rem;
+    margin: 0 auto;
+  }
+  .detail-two > p {
+    margin: 1rem 0;
+  }
+  .detail-two > div {
+    margin: 1rem 0;
+  }
+
+  .div-button-back {
+    width: 35rem;
+  }
+}
+@media screen and (max-width: 800px) {
+  .detail-page {
+    width: 85%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .detail-one {
+    width: 85%;
+  }
+  .detail-one > img {
+    width: 14rem;
+  }
+  .detail-film-genre {
+    width: 14rem;
+  }
+  .detail-two {
+    width: 85%;
+  }
+  .div-button-back {
+    width: 85%;
+  }
+}
+
+.detail-one{
+  margin: 2rem 2rem;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  
+}
+
+.detail-one > img{
+  border-radius: 10px;
+  /* width: 18rem; */
+  box-shadow: 2px 2px 6px 0 rgba(0, 0, 0, 0.3);
+}
+
+.detail-film-name{
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+.detail-film-genre{
+  display: flex;
+  margin: 1rem 0;
+}
+.detail-film-genre > div:not(:first-child) {
+  margin-left: 1rem;
+}
+
+.genre-info{
+  background-color: #8395b1;
+  margin: 0 7px;
+  padding: 3px;
+  color: rgb(232, 232, 232);
+  border-radius: 2px;
+  font-weight: 100;
+}
+.genreTitleInfo {
+  font-weight: 100;
+  font-size: 1.1rem;
+}
+
+.detail-two{
+  width: 25rem;
+  margin: 2rem 2rem;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+
+.div-button-back{
+  width: 50rem;
+  margin: 2rem auto;
+  display: flex;
+  justify-content: flex-end;
+}
+.div-button-back > button{
+  padding: 0.8rem 2rem;
+  background-color: rgb(219, 219, 219);
+  border-radius: 10px;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  color: white;
+  transition: all 0.2s linear;
+}
+.div-button-back > button:hover {
+  background-color: #c5b8b8;
+}
+
+.div-button-info{
+  display: flex;
+  margin: 1rem 0;
+  
+}
+.div-button-info > a{
+  padding: 0.3rem 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+  color: black;
+  box-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
+  transition: all 0.2s linear;
+} 
+
+.button-hbo{
+  border: 1px solid #66b3ee;
+}
+.button-hbo:hover{
+  background-color: #67a1f1;
+}
+
+.button-tvmaze{
+  border: 1px solid #31a0c8;
+  margin-left: 1rem;
+}
+
+.button-tvmaze:hover{
+  background-color: #67a1f1;
+}
