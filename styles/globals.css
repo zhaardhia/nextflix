@@ -11,3 +11,17 @@
 body { 
   background: #EDF2F7
 }
+
+.not-found {
+  text-align: center;
+  line-height: 2;
+  margin: 5rem auto;
+}
+.link-404{
+  color: #4979ff;
+  text-decoration: underline;
+}
+.not-found > p {
+  margin-top: 5rem;
+  font-size: 1.3rem;
+}

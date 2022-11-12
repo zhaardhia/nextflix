@@ -19,6 +19,7 @@ const Banner = () => {
             alt={banner?.show?.name} 
             width={224}
             height={314}
+            priority
           />
         </div>
         
