@@ -4,6 +4,7 @@ import Link from 'next/link'
 import { useMovie } from '../contexts/ApiContext'
 import FilmSection from '../components/FilmSection'
 import Banner from '../components/Banner'
+import SpinnerLoad from '../components/SpinnerLoad'
 
 export default function Home() {
   const { state } = useMovie()
@@ -17,8 +18,8 @@ export default function Home() {
         <meta name="keywords" content="ninjas"/>
       </Head>
       <main>
-        <Banner films={movie}/>
-        <FilmSection films={movie}/>
+        {movie.length < 1 ? <SpinnerLoad /> : (<Banner films={movie}/>)}
+        {movie.length < 1 ? <SpinnerLoad /> : (<FilmSection films={movie}/>)}
       </main>
     </div>
   )
