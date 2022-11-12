@@ -6,63 +6,6 @@
   font-size: 1.2rem;
 }
 
-@media screen and (max-width: 900px) {
-  .detail-page {
-    flex-direction: column;
-  }
-  .detail-one {
-    width: 35rem;
-    margin: 0 auto;
-  }
-  .detail-one > img {
-    margin: 0 auto;
-  }
-  .detail-film-name {
-    text-align: center;
-  }
-  .detail-film-genre {
-    width: 18rem;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .detail-two {
-    width: 35rem;
-    margin: 0 auto;
-  }
-  .detail-two > p {
-    margin: 1rem 0;
-  }
-  .detail-two > div {
-    margin: 1rem 0;
-  }
-
-  .div-button-back {
-    width: 35rem;
-  }
-}
-@media screen and (max-width: 800px) {
-  .detail-page {
-    width: 85%;
-  }
-}
-@media screen and (max-width: 600px) {
-  .detail-one {
-    width: 85%;
-  }
-  .detail-one > img {
-    width: 14rem;
-  }
-  .detail-film-genre {
-    width: 14rem;
-  }
-  .detail-two {
-    width: 85%;
-  }
-  .div-button-back {
-    width: 85%;
-  }
-}
-
 .detail-one{
   margin: 2rem 2rem;
   display: flex;
@@ -70,8 +13,10 @@
   flex-direction: column;
   
 }
-
-.detail-one > img{
+.imgDivDetail {
+  width: 18rem;
+}
+.imgDetail{
   border-radius: 10px;
   /* width: 18rem; */
   box-shadow: 2px 2px 6px 0 rgba(0, 0, 0, 0.3);
@@ -99,7 +44,7 @@
 }
 .genreTitleInfo {
   font-weight: 100;
-  font-size: 1.1rem;
+  font-size: 0.9rem;
 }
 
 .detail-two{
@@ -118,7 +63,7 @@
 }
 .div-button-back > button{
   padding: 0.8rem 2rem;
-  background-color: rgb(219, 219, 219);
+  background-color: rgb(164, 176, 202);
   border-radius: 10px;
   text-decoration: none;
   cursor: pointer;
@@ -158,4 +103,62 @@
 
 .button-tvmaze:hover{
   background-color: #67a1f1;
+}
+
+@media screen and (max-width: 900px) {
+  .detail-page {
+    flex-direction: column;
+  }
+  .detail-one {
+    width: 35rem;
+    margin: 0 auto;
+  }
+  .imgDivDetail {
+    margin: 0 auto;
+    width: 220px;
+  }
+  .detail-film-name {
+    text-align: center;
+  }
+  .detail-film-genre {
+    width: 220px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .detail-two {
+    width: 35rem;
+    margin: 0 auto;
+  }
+  .detail-two > p {
+    margin: 1rem 0;
+  }
+  .detail-two > div {
+    margin: 1rem 0;
+  }
+
+  .div-button-back {
+    width: 35rem;
+  }
+}
+@media screen and (max-width: 800px) {
+  .detail-page {
+    width: 85%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .detail-one {
+    width: 85%;
+  }
+  .imgDivDetail {
+    width: 14rem;
+  }
+  .detail-film-genre {
+    width: 14rem;
+  }
+  .detail-two {
+    width: 85%;
+  }
+  .div-button-back {
+    width: 85%;
+  }
 }

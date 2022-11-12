@@ -18,8 +18,8 @@ export default function Home() {
         <meta name="keywords" content="ninjas"/>
       </Head>
       <main>
-        {movie.length < 1 ? <SpinnerLoad /> : (<Banner films={movie}/>)}
-        {movie.length < 1 ? <SpinnerLoad /> : (<FilmSection films={movie}/>)}
+        {movie?.length < 1 ? <SpinnerLoad /> : (<Banner films={movie}/>)}
+        {movie?.length < 1 ? <SpinnerLoad /> : (<FilmSection films={movie}/>)}
       </main>
     </div>
   )
