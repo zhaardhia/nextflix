@@ -2,7 +2,6 @@ import CardFilm from "./CardFilm"
 import styles from "../styles/FilmSection.module.css"
 
 const FilmSection = ({ films }) => {
-  
   return (
     <div className={styles.mainSection}>
       <div className={styles.mainSectionHeader}>

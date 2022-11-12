@@ -1,4 +1,4 @@
-import { API_URL, API_URL_SEARCH, API_URL_SHOWS, API_URL_SHOWS_STANDARD } from "./api"
+import { API_URL_SEARCH, API_URL_SHOWS, API_URL_SHOWS_STANDARD } from "./api"
 
 export const tvMazeGirls = async (movie = 'girls') => {
   try {

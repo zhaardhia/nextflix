@@ -23,7 +23,7 @@ const DetailMovie = () => {
       SetFilmDetail(data);
     }
   }
-  console.log(id)
+
   return (
     <>
       {

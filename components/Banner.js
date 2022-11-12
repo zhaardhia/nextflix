@@ -2,7 +2,8 @@ import Image from "next/image"
 import styles from "../styles/Banner.module.css"
 import { useMovie } from "../contexts/ApiContext"
 import Link from "next/link"
-const Banner = ({ films }) => {
+
+const Banner = () => {
   const { state } = useMovie();
 
   const banner = Object.keys(state?.banner).length === 0 ? state?.movie[0] : state?.banner
@@ -32,8 +33,8 @@ const Banner = ({ films }) => {
             })}
           </div>
           <div className={styles.buttonBanner}>
-            <Link href={`./detail/${banner?.show?.id}`} className={styles.bannerTodetail} >See Detail Info</Link>
-            <a href={banner?.show?.url} className={styles.bannerToofficial} target="_blank" rel="noreferrer">See Official Info</a>
+            <Link href={`/detail/${banner?.show?.id}`} className={styles.bannerTodetail} >See Detail Info</Link>
+            <Link href={banner?.show?.url} className={styles.bannerToofficial} target="_blank" rel="noreferrer">See Official Info</Link>
           </div>
         </div>
       </div>  
