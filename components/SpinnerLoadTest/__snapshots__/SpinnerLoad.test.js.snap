@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Loader animation component renders successfully 1`] = `
+<div>
+  <div
+    class="grow-pulse spinner"
+  />
+</div>
+`;

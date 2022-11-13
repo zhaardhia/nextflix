@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer component renders successfully 1`] = `
+<div>
+  <footer
+    class="footer"
+  >
+    <p>
+      Copyright © Campflix 2022
+    </p>
+  </footer>
+</div>
+`;
+
+exports[`Header component renders successfully 1`] = `
+<div>
+  <footer
+    class="footer"
+  >
+    <p>
+      Copyright © Campflix 2022
+    </p>
+  </footer>
+</div>
+`;
