@@ -1,6 +1,6 @@
-# campaign-frontend-screening-test
+# next-flix
 
-> Project for Campaign frontend test called "Campflix". Live on [frontend-sde-test-campaign](https://frontend-sde-test-campaign.vercel.app/)
+> Live on [frontend-sde-test-campaign](https://frontend-sde-test-campaign.vercel.app/)
 
 ### Stack used
 
